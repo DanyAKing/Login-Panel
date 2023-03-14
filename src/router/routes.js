@@ -3,8 +3,8 @@ const express = require('express');
 const routers = express.Router();
 
 routers
-  .get('/', async (req, res) => {
-    console.log('hi');
+  .post('/login', async (req, res) => {
+    console.log(req.body);
   });
 
 module.exports = { routers };

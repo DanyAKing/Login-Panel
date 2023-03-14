@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="login_container">
-    <form class="login_form" autocomplete="off">
+    <form class="login_form" autocomplete="off" action="/login" method="post">
       <div class="input_container">
         <label for="login_name">Login:</label>
         <input type="text" name="login" id="login_name" required>
@@ -18,7 +18,7 @@
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" required>
       </div>
-      <input type="submit" value="Log in">
+      <button type="submit">Log In</button>
     </form>
   </div>
 </body>
