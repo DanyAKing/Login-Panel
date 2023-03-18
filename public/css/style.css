@@ -193,7 +193,7 @@ button:hover:after {
 .bg_dot:nth-child(1) {
   animation: move1 10s linear infinite;
   height: 50vh;
-  left: 0;
+  left: 24px;
   position: absolute;
   top: 0;
   width: 50vh;
