@@ -4,10 +4,9 @@ const { writeFile } = require('fs').promises;
 const hashPassword = async (orginalText) => {
   hash(orginalText, 10, async (err, hash) => {
     if (err) {
-      throw new Error(err);
+      throw new Error(err.message);
     } else {
-      await writeFile('data/password.txt', hash, 'utf-8');
-      // console.log(hash);
+      await writeFile('src/bcrypt/data/password.txt', hash, 'utf-8');
     }
   });
 };
