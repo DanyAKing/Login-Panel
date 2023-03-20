@@ -226,5 +226,24 @@ button:hover:after {
   }
 }
 
+.option {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.option a {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.option a:hover {
+  text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+  opacity: 1;
+}
+
 
 

@@ -1,12 +1,12 @@
 const express = require('express');
 const { hashPassword } = require('../bcrypt/hash');
 
-const routers = express.Router();
+const loginRouters = express.Router();
 
-routers
+loginRouters
   .post('/login', async (req, res) => {
     console.log(req.body);
-    await hashPassword(req.body.password);
+    // await hashPassword(req.body.password);
   });
 
-module.exports = { routers };
+module.exports = { loginRouters };

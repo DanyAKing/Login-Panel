@@ -6,7 +6,7 @@ const hashPassword = async (orginalText) => {
     if (err) {
       throw new Error(err.message);
     } else {
-      await writeFile('src/bcrypt/data/password.txt', hash, 'utf-8');
+      await writeFile('src/bcrypt/data/password.json', JSON.stringify(hash), 'utf-8');
     }
   });
 };

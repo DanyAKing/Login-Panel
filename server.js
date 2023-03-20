@@ -1,6 +1,6 @@
 const express = require('express');
-const { routers } = require('./src/router/routers');
-// const { login } = require('./src/router/login');
+const { loginRedirection } = require('./src/routers/loginRedirection');
+// const { loginRouters } = require('./src/routers/loginRouters');
 
 const app = express();
 
@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(express.urlencoded({
   extended: true,
 }));
-// app.use('/', login);
-app.use('/', routers);
+app.use('/', loginRedirection);
+// app.use('/', loginRouters);
 
 app.listen(3000, '127.0.0.1', () => {
   console.log('Server started successfully!');
