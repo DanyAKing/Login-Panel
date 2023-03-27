@@ -4,7 +4,7 @@ const loginRedirection = express.Router();
 
 loginRedirection
   .get('/', (req, res) => {
-    res.redirect('/log-in');
+    res.redirect('/login');
   });
 
 module.exports = { loginRedirection };
