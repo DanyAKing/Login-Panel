@@ -1,20 +1,23 @@
 const { readFile } = require('fs').promises;
+const { join } = require('path');
 const { compareHash } = require('../../utils/bcrypt/compareHash');
 
 class User {
   constructor(userData) {
-    this.username = userData.username;
-    this.password = userData.password;
+    this.currentData = join(__dirname, '../../data', userData);
     this.loadHash();
   }
 
   loadHash = async () => {
-    this.hash = await readFile('data/password.json', 'utf-8');
+    this.hash = JSON.parse(await readFile(this.currentData, 'utf-8'));
   };
 
-  checkUser = () => {
-    compareHash(this.password, this.hash);
+  checkAccess = (data) => {
+    const { username, password: orginalText } = data;
+    compareHash(orginalText, this.hash, username);
   };
 }
 
-module.exports = { User };
+const user = new User('password.json');
+
+module.exports = { user };
