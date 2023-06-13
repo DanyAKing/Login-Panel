@@ -1,0 +1,55 @@
+<head>
+  <title>Create new accout</title>
+</head>
+
+<form class="registration_form" autocomplete="off" action="/registration/join/create" method="post">
+      <div class="input_container">
+        <input
+          id="user_name"
+          aria-label="User"
+          type="text"
+          name="username"
+          placeholder=" "
+          required
+        />
+        <label for="user_name">Username:</label>
+      </div>
+      <div class="input_container">
+        <input
+          id="password"
+          aria-label="Password"
+          type="password"
+          name="password"
+          placeholder=" "
+          required
+        />
+        <label for="password">Password:</label>
+      </div>
+      <div class="input_container">
+        <input
+          id="confirm_password"
+          aria-label="Confirm password"
+          type="password"
+          name="confirm_password"
+          placeholder=" "
+          required
+        />
+        <label for="confirm_password">Confirm password:</label>
+      </div>
+      <div class="input_container">
+        <input
+          id="email"
+          aria-label="E-mail"
+          type="email"
+          name="email"
+          placeholder=" "
+          required
+        />
+        <label for="password">E-mail:</label>
+      </div>
+      <div class="form_spacer" aria-hidden="true"></div>
+      <button type="submit">Create account</button>
+      <div class="option">
+          <a href="/login">Sign into exist account</a>
+      </div>
+</form>
