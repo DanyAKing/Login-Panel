@@ -245,5 +245,22 @@ button:hover:after {
   opacity: 1;
 }
 
+.after_login {
+  backdrop-filter: blur(8px);
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.35)
+  );
+  border-radius: 15px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+  max-height: 100%;
+  max-width: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 24px;
+  text-align: center;
+}
+
 
 
