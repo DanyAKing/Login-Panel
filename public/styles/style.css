@@ -27,6 +27,9 @@ body {
   width: 100vw;
 }
 
+
+
+/* login viwe */
 form {
   backdrop-filter: blur(8px);
   background: linear-gradient(
@@ -168,6 +171,9 @@ button:hover:after {
   width: 80%;
 }
 
+
+
+/* main layout viwe */
 /* animation background */
 /* container for elements */
 .bg {
@@ -262,5 +268,12 @@ button:hover:after {
   text-align: center;
 }
 
+
+
+/* registration view */
+.password_alert {
+  color: red;
+  font-size: 14px;
+}
 
 
